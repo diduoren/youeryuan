@@ -1,0 +1,8 @@
+LIBRARY	"QueryInfomation"
+
+EXPORTS
+	;
+	QueryInfomation			@1
+	GetDllFuncs				@2
+	GetDllFuncCnt			@3
+	

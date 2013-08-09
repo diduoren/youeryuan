@@ -1,0 +1,7 @@
+; wphone.def : Declares the module parameters for the DLL.
+
+LIBRARY      "wphone"
+
+EXPORTS
+    ; Explicit exports can go here
+    GetIPlugIn @1

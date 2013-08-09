@@ -1,0 +1,8 @@
+; tlnt.def : Declares the module parameters for the DLL.
+
+LIBRARY      "tlnt"
+DESCRIPTION  'tlnt Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    GetIPlugIn @1

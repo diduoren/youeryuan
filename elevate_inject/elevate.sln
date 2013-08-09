@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "elevate", "elevate\elevate.vcproj", "{704912AE-E2D7-4736-83CE-2AD0AF44A80B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dll", "dll\dll.vcproj", "{889E56BD-F703-497D-8418-AE80E27BE806}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "system", "system\system.vcproj", "{1492DA52-89E9-4A7A-B2D2-43A8F090BF5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{704912AE-E2D7-4736-83CE-2AD0AF44A80B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{704912AE-E2D7-4736-83CE-2AD0AF44A80B}.Debug|Win32.Build.0 = Debug|Win32
+		{704912AE-E2D7-4736-83CE-2AD0AF44A80B}.Release|Win32.ActiveCfg = Release|Win32
+		{704912AE-E2D7-4736-83CE-2AD0AF44A80B}.Release|Win32.Build.0 = Release|Win32
+		{889E56BD-F703-497D-8418-AE80E27BE806}.Debug|Win32.ActiveCfg = Debug|Win32
+		{889E56BD-F703-497D-8418-AE80E27BE806}.Debug|Win32.Build.0 = Debug|Win32
+		{889E56BD-F703-497D-8418-AE80E27BE806}.Release|Win32.ActiveCfg = Release|Win32
+		{889E56BD-F703-497D-8418-AE80E27BE806}.Release|Win32.Build.0 = Release|Win32
+		{1492DA52-89E9-4A7A-B2D2-43A8F090BF5D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1492DA52-89E9-4A7A-B2D2-43A8F090BF5D}.Debug|Win32.Build.0 = Debug|Win32
+		{1492DA52-89E9-4A7A-B2D2-43A8F090BF5D}.Release|Win32.ActiveCfg = Release|Win32
+		{1492DA52-89E9-4A7A-B2D2-43A8F090BF5D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

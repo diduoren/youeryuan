@@ -1,0 +1,7 @@
+LIBRARY	"svrCtrlDll"
+DESCRIPTION  'svrCtrl Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	ServiceMain
+	RealService

@@ -1,0 +1,318 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\remoteFile.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "remoteFile DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "remoteFile"
+            VALUE "LegalCopyright", "版权所有 (C) 2011"
+            VALUE "OriginalFilename", "remoteFile.DLL"
+            VALUE "ProductName", "remoteFile Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_FILEMGR         BITMAP                  "res\\manage.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_RENAME DIALOGEX 0, 0, 212, 51
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建目录"
+FONT 9, "宋体", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_VALUE,55,12,148,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDOK,81,32,50,14
+    LTEXT           "目录名称:",IDC_STATIC,12,15,37,8
+END
+
+IDD_DIALOG_FINDFILE DIALOGEX 0, 0, 219, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "搜索文件"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE,3,26,201,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DIR,3,69,201,16,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "开始搜索",IDOK,155,104,50,14
+    LTEXT           "要搜索的文件名称:",IDC_STATIC,4,10,69,8
+    LTEXT           "搜索目录:",IDC_STATIC,4,52,37,8
+END
+
+IDD_DIALOG_FILE_TRANS DIALOG  0, 0, 234, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PcShare文件传输"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "取消",IDCANCEL,184,61,50,14
+    CONTROL         "Progress1",IDC_PROGRESS_FILE,"msctls_progress32",WS_BORDER,2,63,177,10
+    LTEXT           "Static",ID_FILE_SRC,18,36,211,8
+    LTEXT           "Static",ID_FILE_DES,17,49,212,8
+    CONTROL         "Animate1",IDC_ANIMATE_FILE,"SysAnimate32",ACS_TRANSPARENT | ACS_AUTOPLAY,29,1,20,20
+    LTEXT           "从:",IDC_STATIC,4,36,11,8
+    LTEXT           "到:",IDC_STATIC,4,49,13,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_WAIT         CURSOR                  "RES\\WAIT07.CUR"
+IDC_CURSOR_LOGO         CURSOR                  "RES\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_UPDIR          ICON                    "res\\updir.ico"
+IDI_ICON6               ICON                    "RES\\NoFix.ico"
+IDI_ICON5               ICON                    "RES\\RemoteDisk.ico"
+IDI_ICON4               ICON                    "RES\\DRIVE.ICO"
+IDI_ICON3               ICON                    "RES\\CLSDFOLD.ICO"
+IDI_ICON2               ICON                    "RES\\CDDRIVE.ICO"
+IDI_ICON1               ICON                    "res\\Floop.ico"
+IDI_ICON_REFRESH        ICON                    "res\\refresh.ico"
+IDI_ICON_T_FIND         ICON                    "res\\search.ico"
+IDI_ICON_T_DELETE       ICON                    "res\\delete.ico"
+IDI_ICON_T_CREATE       ICON                    "res\\newDir.ico"
+IDI_ICON_DIR            ICON                    "RES\\DirOpen.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "PcFile"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PcFile"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    IDS_MYDIRFILES          "  "
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DIR_PREV             "后退\n后退"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DIR_FIND_FILE        "搜索文件\n搜索文件"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DIR_RIGHT_DELETE     "删除\n删除"
+    ID_DIR_RIGHT_RENAME     "重命名\n重命名"
+    ID_DIR_RIGHT_DOWNLOAD   "下载\n下载"
+    ID_DIR_RIGHT_UPLOAD     "上传文件\n上传文件"
+    ID_DIR_RIGHT_UPLOAD_EXEC "上传运行文件\n上传运行文件"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EXIT                 "关闭程序\n关闭程序"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_TRANS_DELETE_ALL "删除所有项目\n删除所有项目"
+    ID_FILE_TRANS_START     "开始传输文件\n开始传输文件"
+    ID_FILE_TRANS_STOP      "停止传输文件\n停止传输文件"
+    ID_FILE_TRANS_DELETE    "从对列中删除\n从对列中删除"
+    ID_FILE_TRANS_RESTART   "重置传输状态\n重置传输状态"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DIR_FLUSH            "刷新\n刷新"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEW1 DIALOGEX 0, 0, 406, 214
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_UP_DIR,238,7,30,15,BS_ICON
+    COMBOBOX        IDC_COMBO_DIR,9,9,225,125,CBS_DROPDOWN | CBS_SORT | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "",IDC_REFRESH_DIR,273,7,30,15
+    PUSHBUTTON      "",IDC_SEARCH_DIR,369,7,30,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_FORMVIEW1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\remoteFile.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

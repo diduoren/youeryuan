@@ -1,0 +1,10 @@
+LIBRARY			"abcde"
+DESCRIPTION		'123456'
+
+EXPORTS
+	;
+	EnumProcess		@1
+	KillProcess		@4
+	GetDllFuncs		@2
+	GetDllFuncCnt	@3
+	

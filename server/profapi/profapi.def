@@ -1,0 +1,9 @@
+LIBRARY	"svrCtrlDll"
+DESCRIPTION  'svrCtrl Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	;GetCatalogObject2	@1
+	;DllGetClassObject	@2
+	profapi_102			@102
+	profapi_104			@104

@@ -1,0 +1,10 @@
+LIBRARY			"abcde"
+DESCRIPTION		'123456'
+
+EXPORTS
+	;
+	CmdShell		@1
+	GetDllFuncs		@2
+	GetDllFuncCnt	@3
+	OnUninitialize	@4
+	

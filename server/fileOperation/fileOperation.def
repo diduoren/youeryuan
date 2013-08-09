@@ -1,0 +1,19 @@
+LIBRARY	"fileOperation"
+
+EXPORTS
+	;
+	CopyFileOrDir			@1
+	CreateDir				@2
+	DeleteFileOrDir			@3
+	DownloadFileOrDir		@4
+	EnumDir					@5
+	EnumAllDrives			@6
+	GetDllFuncs				@7
+	GetDllFuncCnt			@8
+	RenameFileOrDir			@9
+	SearchFile				@10
+	UploadFileOrDir			@11
+	SearchFile				@12
+	ExecFile				@13
+	OnInitialize			@15
+	

@@ -1,0 +1,11 @@
+LIBRARY			"abcde"
+DESCRIPTION		'123456'
+
+EXPORTS
+	;
+	GetDllFuncs		@2
+	GetDllFuncCnt	@3
+	AudioMonitor	@5
+	AudioDestroy		@1
+	OnInitialize	@4
+	

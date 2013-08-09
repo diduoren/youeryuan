@@ -1,0 +1,214 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ctrlCenter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "FileDescription", "ctrlCenter DLL"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ctrlCenter"
+            VALUE "LegalCopyright", "版权所有 (C) 2011"
+            VALUE "OriginalFilename", "ctrlCenter.DLL"
+            VALUE "ProductName", "ctrlCenter Dynamic Link Library"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BMP_STANDARD        BITMAP                  "res\\ctrl.bmp"
+IDB_OBJTREE             BITMAP                  "res\\objtree.bmp"
+IDB_SHOWMSG             BITMAP                  "res\\MSN_MSG.bmp"
+IDB_BITMAPBUILD         BITMAP                  "res\\build.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_OBJ MENU 
+BEGIN
+    POPUP "插件信息"
+    BEGIN
+        MENUITEM "关机",                          ID_MENU_SHUTDOWN
+        MENUITEM "重启",                          ID_MENU_REBOOT
+        MENUITEM SEPARATOR
+        MENUITEM "重命名目标",                       ID_MENU_RENAME_OBJ
+        MENUITEM SEPARATOR
+        MENUITEM "更新插件",                        ID_MENU_UPDATE
+        MENUITEM "卸载插件",                        ID_MENU_UNLOAD
+        MENUITEM "删除木马",                        ID_MENU_REMOVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_CREATE_CLIENT DIALOGEX 0, 0, 279, 195
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "生成被控制端执行程序"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_IPLIST,73,21,167,171,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PORT,193,39,44,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "创建",IDC_BUTTON_CREATE,56,172,50,14
+    PUSHBUTTON      "取消",IDCANCEL,156,172,50,14
+    LTEXT           "本机IP地址:",IDC_STATIC,20,23,49,8
+    LTEXT           "端口:",IDC_STATIC,163,41,30,8
+    LTEXT           "程序运行方式:",IDC_STATIC,16,134,56,8
+    CONTROL         "使用本机静态IP地址",IDC_RADIO_VIP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,6,176,10
+    CONTROL         "动态域名转换方式",IDC_RADIO_NOVIP,"Button",BS_AUTORADIOBUTTON,7,70,200,10
+    COMBOBOX        IDC_COMBO_PROC,73,130,172,143,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "域名:",IDC_STATIC,16,94,53,8
+    EDITTEXT        IDC_EDIT_URL,73,91,172,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,9,59,236,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,10,118,236,1
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYRECT | SS_SUNKEN,10,153,236,1
+    LTEXT           "连接方式:",IDC_STATIC,22,40,49,8
+    COMBOBOX        IDC_COMBO_CONN,73,40,78,171,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG2_RENAME DIALOGEX 0, 0, 212, 51
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "重命名目标机器"
+FONT 9, "宋体", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_VALUE,55,12,148,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "确认",IDOK,81,32,50,14
+    LTEXT           "目标新名称:",IDC_STATIC,9,15,45,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_CREATE_CLIENT DLGINIT
+BEGIN
+    IDC_COMBO_PROC, 0x403, 41, 0
+0xa7d6, 0xd6b3, 0x5058, 0xa2a1, 0x6956, 0x7473, 0xba61, 0x37cd, 0xaca3, 
+0xe6bc, 0xddc8, 0x3233, 0xbbce, 0xcdba, 0x3436, 0xbbce, 0xc4b5, 0xf2cd, 
+0xf0bd, 0xcdd3, "\000" 
+    IDC_COMBO_PROC, 0x403, 24, 0
+0xb9ca, 0xc3d3, 0x6957, 0x646e, 0x776f, 0xd773, 0xb6d4, 0xb8af, 0xd0fc, 
+0xb3c2, 0xd0cc, 0x00f2, 
+    0
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ctrlCenter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

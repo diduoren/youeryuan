@@ -1,0 +1,9 @@
+; BasicInfo.def : Declares the module parameters for the DLL.
+
+LIBRARY      "BasicInfo"
+DESCRIPTION  'BasicInfo Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	GetIPlugIn		@1
+	GetIService		@2
